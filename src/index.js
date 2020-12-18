@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './fonts/TrajanPro-Bold.ttf'
+import './fonts/ArchivoNarrow-Bold.ttf'
+import './fonts/HankenGrotesk-Bold.ttf'
+import './fonts/Avenir.ttf'
+import './fonts/Roboto-Black.ttf'
+import './fonts/Roboto-Bold.ttf'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
