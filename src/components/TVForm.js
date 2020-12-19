@@ -134,7 +134,7 @@ export default function TVForm() {
 <div className= 'touchpoint1-sub' >
 <p>Format:</p>
 <select name={`items[${index}].format`} ref={register} >
-<option value=''></option>
+<option value='format1'>Format 1</option>
 </select></div>
 <div className= 'touchpoint1-sub' >
 <p>HD:</p>

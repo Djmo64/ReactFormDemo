@@ -12,10 +12,7 @@ import countries from '../components/countries';
 
 const CompanyInfo = () => {
 
-    const [params1,setparams] = useState({
-        company: '',
-        countries: {}
-    }); 
+    const [params1,setparams] = useState(''); 
     const [company, setCompany] = useContext(CompanyContext);
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
@@ -57,34 +54,25 @@ const CompanyInfo = () => {
         options={tv}
         filterSelectedOptions = {false}
         renderInput={(params) => (
-          <TextField value={params1} onSelect={(e)=>setparams({[e.target.name]:e.target.value})}
-          onChange={console.log(params1)}
+          <TextField value={params1} onSelect={(e)=>{
+            setparams(e.target.value);
+            setCompany(e.target.value);}}
+          onChange={()=>{
+            setparams(company);
+            console.log(company);
+          }}
             {...params}
             variant="outlined" name='company' />
         )}
       /> </div>
       
         </div>
-        {params1.company === 'Other' || params1.company === 'other' ? 
+        {params1 === 'Other' || params1 === 'other' ? 
         <div className='textfieldOther'>
       <p>Please Specify:</p>
-      <TextField className='textfieldothertext' variant='outlined' name='company'  /></div>
+      <TextField onChange={(e)=>setCompany(e.target.value)} className='textfieldothertext' variant='outlined' name='company'  /></div>
     : null}
-        <div className='operation'>
-        <p>Countries of operation:</p>
-        <Autocomplete name='countries'
-        multiple
-        onSelect={(e)=>setparams({[e.target.name]:e.target.value})}
-        id="tags-outlined"
-        options={countries}
-        filterSelectedOptions = {false}
-        renderInput={(params) => (
-          <TextField
-          
-            {...params}
-            variant="outlined" name='countries'  />
-        )}
-      /></div>
+        
      <Link to='/touchPoints'> <button className='CompanyLocSubmit' >Continue ►</button></Link>
       
      

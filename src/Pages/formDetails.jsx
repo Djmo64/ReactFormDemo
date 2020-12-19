@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { CompanyContext, FormContext, FormContext2, FormContext3, FormContext4,FormContext5,FormContext6, FormProvider, PersonalContext, PragContext, PragProvider } from '../components/FormContext';
+import { CompanyContext, FormContext, FormContext2, FormContext3, FormContext4,FormContext5,FormContext6, FormProvider, PackageContext, PersonalContext, PragContext, PragProvider } from '../components/FormContext';
 import logo from '../Pictures/SignIn/logo-org-blk-side.png'
 import { useContext } from 'react';
 import {Link} from 'react-router-dom'
@@ -18,6 +18,7 @@ const FormDetails = () => {
     const [forms6,setForms6] = useContext(FormContext6);
     const [personal, setPersonal] = useContext(PersonalContext);
     const [company, setCompany] = useContext(CompanyContext); 
+    const [pack,setPack] = useContext(PackageContext);
         
 
     const [prag,setPrag] = useContext(PragContext);
@@ -41,8 +42,9 @@ const FormDetails = () => {
               <div className='personaldetails'>
                 <h2 className='formtitle'>Company Info:</h2>
                 <div className='personalcontent'>
-                  <h3>{"Company:"+ company.company}</h3>
-                  <h3>Counties of operation: {company.countries}</h3>
+                  <h3>{"Company:"+ company}</h3>
+                  <h3>{"Package: " + pack}</h3>
+                  
                  </div>
                   </div>
               </div>

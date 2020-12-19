@@ -416,12 +416,19 @@ color: black;
     transition: background var(--speed);
     padding: 0.5rem;
 }
+.detailscontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.slide4 small{
+    
+}
 .personaldetails{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 20px;
-    width: 50%;
+    width: 45%;
     border: 1px solid gray;
     padding: 10px;
     box-shadow: 0px 0px 6px 1px;
@@ -2973,6 +2980,92 @@ html {
 }
 .touchpoint1 p{
     width: 100px;
+}
+.packageoptions{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.optionA{
+    width: 25%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px;
+    border-top: 15px solid gray;
+}
+.packageslide{
+    background: transparent;
+    padding: 10px;
+    width: 90%;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px;
+}
+.optionB{
+    width: 25%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px;
+    border-top: 15px solid rgb(211, 108, 64);
+}
+.optionC{
+    width: 25%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px;
+    border-top: 15px solid #1b3258;
+}
+.optionA button{
+    width: 50%;
+    align-self: center;
+    padding: 5px;
+    background: transparent;
+    border: 2px solid gray;
+    box-shadow: 0px 0px 5px;
+    border-radius: 5px;
+}
+.optionA button:hover{
+    background: gray;
+    color: white;
+}
+.optionB button{
+    width: 50%;
+    align-self: center;
+    padding: 5px;
+    background: transparent;
+    border: 2px solid rgb(211, 108, 64);
+    box-shadow: 0px 0px 5px;
+    border-radius: 5px;
+}
+.optionB button:hover{
+    background: rgb(211, 108, 64);
+    color: white;
+}
+.optionC button{
+    width: 50%;
+    align-self: center;
+    padding: 5px;
+    background: transparent;
+    border: 2px solid #1b3258;
+    box-shadow: 0px 0px 5px;
+    border-radius: 5px;
+}
+.optionC button:hover{
+    background:  #1b3258;
+    color: white;
+}
+.packageslide h2{
+    margin-bottom: 20px;
+}
+.packagechoicebtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
 }
 .attach{
     border: 1px solid gray !important;

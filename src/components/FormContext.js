@@ -11,10 +11,11 @@ export const FormContext6 = React.createContext();
 export const PersonalContext = React.createContext();
 export const CompanyContext = React.createContext();
 export const PragContext = React.createContext();
+export const PackageContext = React.createContext();
 
 export const FormProvider = (props) => {
     const [forms, setForms] = useState(
-        []
+        [{}]
     );
    
     return(
@@ -25,7 +26,7 @@ export const FormProvider = (props) => {
 }
 export const FormProvider2 = (props) => {
     const [forms2, setForms2] = useState(
-        []
+        [{}]
     );
    
     return(
@@ -36,7 +37,7 @@ export const FormProvider2 = (props) => {
 }
 export const FormProvider3 = (props) => {
     const [forms3, setForms3] = useState(
-        []
+        [{}]
     );
    
     return(
@@ -47,7 +48,7 @@ export const FormProvider3 = (props) => {
 }
 export const FormProvider4 = (props) => {
     const [forms4, setForms4] = useState(
-        []
+        [{}]
     );
    
     return(
@@ -58,7 +59,7 @@ export const FormProvider4 = (props) => {
 }
 export const FormProvider5 = (props) => {
     const [forms5, setForms5] = useState(
-        []
+        [{}]
     );
    
     return(
@@ -69,7 +70,7 @@ export const FormProvider5 = (props) => {
 }
 export const FormProvider6 = (props) => {
     const [forms6, setForms6] = useState(
-        []
+        [{}]
     );
    
     return(
@@ -100,13 +101,20 @@ export const PersonalProvider = (props) => {
     )
 }
 export const CompanyProvider = (props) => {
-    const [company, setCompany] = useState(
-        []
-    );
+    const [company, setCompany] = useState('');
    
     return(
         <CompanyContext.Provider value={[company,setCompany]}>
             {props.children}
         </CompanyContext.Provider>
+    )
+}
+export const PackageProvider = (props) => {
+    const [pack, setPack] = useState('A');
+   
+    return(
+        <PackageContext.Provider value={[pack,setPack]}>
+            {props.children}
+        </PackageContext.Provider>
     )
 }

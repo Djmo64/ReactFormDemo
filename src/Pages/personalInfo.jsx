@@ -43,7 +43,8 @@ const PersonalInfo = () => {
               <input type="submit" value= "Save"/>
            </div>
            </form>
-           <Link to='/formDetails' className='CompanyLocSubmit' >Review and Submit ►</Link>
+           <small>*Please note that all product purchases will be sent as an email and text so please ensure that the above details are correct.</small>
+           <Link to='/PackageInfo' className='CompanyLocSubmit' >Review and Submit ►</Link>
 
          </div>
          </div>

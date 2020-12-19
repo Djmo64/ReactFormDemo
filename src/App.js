@@ -5,8 +5,9 @@ import ProductForm from './Pages/ProductForm';
 import FormDetails from './Pages/formDetails';
 import PersonalInfo from './Pages/personalInfo';
 import { BrowserRouter as Router, Route, Switch,Redirect, } from "react-router-dom";
-import {  CompanyProvider, FormProvider, FormProvider2, FormProvider3, FormProvider4, FormProvider5, FormProvider6, PersonalProvider, PragProvider } from './components/FormContext';
+import {  CompanyProvider, FormProvider, FormProvider2, FormProvider3, FormProvider4, FormProvider5, FormProvider6, PackageProvider, PersonalProvider, PragProvider } from './components/FormContext';
 import TouchPoints from './Pages/touchPoints';
+import PackageInfo from './Pages/PackageInfo';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <CompanyProvider>
       <PersonalProvider>
       <PragProvider>
+      <PackageProvider>
       <FormProvider>
       <FormProvider2>
       <FormProvider3>
@@ -27,6 +29,7 @@ function App() {
           <Route exact path= "/formDetails" component={FormDetails}/>
           <Route exact path='/touchPoints' component={TouchPoints}/>
           <Route exact path= "/personalInfo" component={PersonalInfo}/>
+          <Route exact path= '/PackageInfo' component={PackageInfo}/>
           <Redirect to="/"/>
           </Switch>
         </Router>
@@ -36,6 +39,7 @@ function App() {
         </FormProvider3>
         </FormProvider2>
       </FormProvider>
+      </PackageProvider>
       </PragProvider>
       </PersonalProvider>
       </CompanyProvider>
