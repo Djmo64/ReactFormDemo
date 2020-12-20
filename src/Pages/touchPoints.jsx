@@ -76,7 +76,7 @@ const TouchPoints = () => {
     <div className='oohform'>
       <OOHForm/>
     </div> : null }
-    <Link to='/personalInfo' className='CompanyLocSubmit' >Continue ►</Link>
+    <Link to='/PackageInfo' className='CompanyLocSubmit' >Continue ►</Link>
 
   </div>
    : null

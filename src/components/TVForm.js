@@ -49,11 +49,11 @@ export default function TVForm() {
       <div  className= 'touchpoint1'>
       <div className= 'touchpoint1-sub' >
         <p>Channel:</p>
-    <input type="text" placeholder="Name here..." name={`items[${index}].TVChannelName`} ref={register} />
+    <input defaultValue='Name here...' type="text" placeholder="Name here..." name={`items[${index}].TVChannelName`} ref={register} />
     </div>
     <div className= 'touchpoint1-sub' >
       <p>Number of Viewers</p>
-    <input type="text" placeholder="Viewer number..." name={`items[${index}].NumberofViewers`} ref={register} />
+    <input defaultValue='Viewer number...' type="text" placeholder="Viewer number..." name={`items[${index}].NumberofViewers`} ref={register} />
     </div></div>
     <div className= 'touchpoint1'>
       <div className= 'touchpoint1-sub' >
@@ -69,7 +69,7 @@ export default function TVForm() {
     </select></div>
     <div className= 'touchpoint1-sub' >
     <p>Channel Description:</p>
-    <textarea name={`items[${index}].ChannelDescription`} ref={register} />
+    <textarea defaultValue='Channel descr.' name={`items[${index}].ChannelDescription`} ref={register} />
     </div>
     </div>
     <div className= 'touchpoint1'>
@@ -83,7 +83,7 @@ export default function TVForm() {
     </select></div>
     <div className= 'touchpoint1-sub' >
     <p>Location Aired:</p>
-    <input type="text" placeholder="Location Aired" name={`items[${index}].LocationAired`} ref={register} />
+    <input defaultValue='Location Aired' type="text" placeholder="Location Aired" name={`items[${index}].LocationAired`} ref={register} />
     </div></div>
     <div className= 'touchpoint1'>
         <p>Time Slot:</p>

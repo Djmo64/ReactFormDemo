@@ -4,6 +4,7 @@ import { CompanyContext, FormContext, FormContext2, FormContext3, FormContext4,F
 import logo from '../Pictures/SignIn/logo-org-blk-side.png'
 import { useContext } from 'react';
 import {Link} from 'react-router-dom'
+import { formatMs } from '@material-ui/core';
 
 const FormDetails = () => {
 
@@ -51,7 +52,10 @@ const FormDetails = () => {
            <div className='ListedProducts'>
              <h2 className='ListedProducts-title'>Listed Products:</h2>
             <div className='ListedProducts-sub'>
-             {forms.items.length > 0 ?
+                {console.log(forms.items.length)}
+                {console.log(forms2.items[0].TVChannelName)}
+                {console.log(forms.items[0].TVChannelName === null)}
+             {forms.items[0].TVChannelName !== undefined && forms.items.length > 0 ?
          <div>
              <h2 className="formtitle">TV </h2>
              {forms.items.map((form,index)=>{
@@ -75,7 +79,7 @@ const FormDetails = () => {
                  )
              })}</div>: null}
             
-            {forms2.items.length > 0 ?
+            {forms2.items[0].TVChannelName !== undefined && forms2.items.length > 0 ?
          <div>
              <h2 className="formtitle">Cinema</h2>
              {forms2.items.map((form,index)=>{
@@ -99,7 +103,7 @@ const FormDetails = () => {
                  )
              })}</div> : null}
    
-             {/*   {forms3.items.length > 0 ?
+               {forms3.items[0].TVChannelName !== undefined && forms3.items.length > 0  ?
          <div>
              <h2 className="formtitle">Out of Home</h2>
              {forms3.items.map((form,index)=>{
@@ -123,7 +127,7 @@ const FormDetails = () => {
                  )
              })}</div>
              : null}
-             {forms4.items.length > 0 ?
+             {forms4.items[0].TVChannelName !== undefined && forms4.items.length > 0 ?
          <div>
              <h2 className="formtitle">Print</h2>
              {forms4.items.map((form,index)=>{
@@ -147,7 +151,7 @@ const FormDetails = () => {
                  )
              })}</div>
              : null}
-             {forms5.items.length > 0 ?
+             {forms5.items[0].TVChannelName !== undefined && forms5.items.length > 0 ?
          <div>
              <h2 className="formtitle">Radio</h2>
              {forms5.items.map((form,index)=>{
@@ -171,7 +175,7 @@ const FormDetails = () => {
                  )
              })}</div>
              : null}
-             {forms6.items.length > 0 ?
+             {forms6.items[0].TVChannelName !== undefined && forms6.items.length > 0 ?
          <div>
              <h2 className="formtitle">Cinema</h2>
              {forms6.items.map((form,index)=>{
@@ -194,7 +198,7 @@ const FormDetails = () => {
                  </div>
                  )
              })}</div>
-             : null} */}
+             : null}
              
              {console.log(forms[0])}
           </div></div>

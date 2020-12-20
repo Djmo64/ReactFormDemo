@@ -15,7 +15,7 @@ export const PackageContext = React.createContext();
 
 export const FormProvider = (props) => {
     const [forms, setForms] = useState(
-        [{}]
+        {items: [{}]}
     );
    
     return(
@@ -26,7 +26,7 @@ export const FormProvider = (props) => {
 }
 export const FormProvider2 = (props) => {
     const [forms2, setForms2] = useState(
-        [{}]
+        {items: [{}]}
     );
    
     return(
@@ -37,7 +37,7 @@ export const FormProvider2 = (props) => {
 }
 export const FormProvider3 = (props) => {
     const [forms3, setForms3] = useState(
-        [{}]
+        {items: [{}]}
     );
    
     return(
@@ -48,7 +48,7 @@ export const FormProvider3 = (props) => {
 }
 export const FormProvider4 = (props) => {
     const [forms4, setForms4] = useState(
-        [{}]
+        {items: [{}]}
     );
    
     return(
@@ -59,7 +59,7 @@ export const FormProvider4 = (props) => {
 }
 export const FormProvider5 = (props) => {
     const [forms5, setForms5] = useState(
-        [{}]
+       {items: [{}]}
     );
    
     return(
@@ -70,7 +70,7 @@ export const FormProvider5 = (props) => {
 }
 export const FormProvider6 = (props) => {
     const [forms6, setForms6] = useState(
-        [{}]
+        {items: [{}]}
     );
    
     return(

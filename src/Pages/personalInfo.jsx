@@ -19,7 +19,7 @@ const PersonalInfo = () => {
         <img className="loginPage-img" src={logo}/>
         <div className='slide4'>
         <form onSubmit={handleSubmit(onSubmit)}>
-           <h1>Step 4</h1>
+           <h1>Step 5</h1>
            <h2>Personal Information</h2>
            <div className='touchpoint2'>
            <div className='infoform'>
@@ -43,9 +43,10 @@ const PersonalInfo = () => {
               <input type="submit" value= "Save"/>
            </div>
            </form>
+           <div className='reviewandsub-sec2'>
            <small>*Please note that all product purchases will be sent as an email and text so please ensure that the above details are correct.</small>
-           <Link to='/PackageInfo' className='CompanyLocSubmit' >Review and Submit ►</Link>
-
+           <Link to='/formDetails' className='CompanyLocSubmit' >Review and Submit ►</Link>
+          </div>
          </div>
          </div>
     );

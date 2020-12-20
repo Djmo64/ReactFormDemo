@@ -420,8 +420,13 @@ color: black;
     display: flex;
     justify-content: space-between;
 }
-.slide4 small{
-    
+.reviewandsub-sec2 small{
+    width: 70%;
+    align-self: center;
+}
+.reviewandsub-sec2{
+    display: flex;
+    flex-direction: column;
 }
 .personaldetails{
     display: flex;
@@ -3124,7 +3129,7 @@ html {
     border: none;
     padding: 5px;
     border-radius: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .CompanyLocSubmit:hover{
     background: rgb(211, 108, 64);
